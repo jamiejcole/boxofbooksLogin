@@ -1,0 +1,20 @@
+{
+  "name": "Box of books Auto-Login",
+  "description": "Automatically logs you into NBCS Box of Books using SSO.",
+  "version": "0.1.3",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://nbc-school.boxofbooks.io/auth/page/signin/*",
+        "https://nbc-school.boxofbooks.io/auth/page/signin/"
+      ],
+      "js": ["background.js"]
+    }
+  ]
+}
